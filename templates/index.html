@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="{{ url_for('home') }}">Portfolio</a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active text-light" aria-current="page" href="{{ url_for('home') }}">About Me</a>
+              <a class="nav-link active text-light" aria-current="page" href="{{ url_for('skill_certification') }}">Skill & Certificate</a>
+              <a class="nav-link active text-light" aria-current="page" href="{{ url_for('contact') }}">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      </div>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./../static/saad.png" class="d-block mx-lg-auto img-fluid" alt="My Image" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hello World!</h1>
+            <p class="lead">Hello, my name is Saad Mulla, and I am a Second-year Btech student in Computer Science. I am fascinated by the ever-evolving world of technology and how it impacts our lives, and I am excited to be a part of shaping its future. I’ve Always Been Passionate About Learning New Things, My Most Extensive Interests Include Programming No Matter What I’m Doing At School Or Working On In My Free Time, You’ll Always Find Me Surrounded By Computers.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="{{ url_for('download') }}"><button type="button" class="btn btn-outline-dark btn-lg px-4 me-md-2">Download Resume</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
